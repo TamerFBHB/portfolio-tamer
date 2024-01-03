@@ -1,35 +1,42 @@
-
+import box1 from "../../public/images/html.png"
+import box2 from "../../public/images/css.png"
+import box3 from "../../public/images/java.png"
+import box4 from "../../public/images/react.png"
+import box5 from "../../public/images/sass.png"
+import box6 from "../../public/images/Bootstrap.png"
+import box7 from "../../public/images/tailwind.png"
+import box8 from "../../public/images/vite.svg"
 const Data = [
     {
-    image : "../../public/images/html.png",
+    image : box1,
     name : "HTML"
     },
       {
-    image : "../../public/images/css.png",
+    image : box2,
     name : "css"
     },
     {
-        image : "../../public/images/java.png",
+        image : box3,
         name : "javaScript"
     },
     {
-        image : "../../public/images/react.png",
+        image : box4,
         name : "React"
     },
     {
-        image : "../../public/images/sass.png",
+        image : box5,
         name : "sass"
     },
     {
-        image : "../../public/images/Bootstrap.png",
+        image : box6,
         name : "bootstrap"
     },
     {
-        image : "../../public/images/tailwind.png",
+        image : box7,
         name : "tailwind"
     },
     {
-        image : "../../public/images/vite.svg",
+        image : box8,
         name : "vite"
         },
 ]

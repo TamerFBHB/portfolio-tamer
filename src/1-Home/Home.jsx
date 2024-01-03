@@ -5,6 +5,7 @@ import NavBar from '../00-NavBar/NavBar';
 import { Textillate } from "textillate-react";
 import { IoLogoGithub } from "react-icons/io";
 import NavBarMobile from "../00-NavBar -mobile/NavBarMobile"
+import tamer from "../../public/images/tamer.jpg";
 
 const Home = ({state,setState}) => {
 
@@ -16,7 +17,7 @@ const Home = ({state,setState}) => {
             <div className='home'>
                 <div className="cover">
                     <div className="cover-tamer">
-                        <img src="../../public/images/tamer.jpg" alt='' className='tamerPhoto' />
+                        <img src={tamer} alt='' className='tamerPhoto' />
                     </div>
                 </div>
                 <div className='informion'>
