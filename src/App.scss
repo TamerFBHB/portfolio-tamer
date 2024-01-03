@@ -1,0 +1,60 @@
+@use "./SASS/Main" as *;
+
+
+.mainPage{
+    @include size(100vw , 100vh);
+    @include flex(center,center);
+    background-color: $cyan-5;
+}
+.showPage{
+    @include size(90vw , 90vh);
+    @include flex(center,center);
+    border-radius: 5px;
+    z-index: 100;
+}
+.leftSection{
+    position: relative;
+    @include size(40% , 100%);
+    // background-color: var(--bg-primary);
+    transition: 1s;
+    z-index: 100;
+}
+.rightSection{
+    position: relative;
+    @include size(60% , 100%);
+    @include flex(center,center);
+    background-color: $cyan-5;
+    overflow: hidden;
+}
+/*=======================
+    2- screen mobile 
+=========================*/
+
+@media (max-width: 1100px) {
+    .mainPage{
+        position: relative;
+        @include size(100vw , 100vh);
+        min-height: 5200px;
+        @include flex(start,center);
+        overflow: hidden;
+    }
+    .showPage{
+        position: relative;
+        @include size(100vw , 100vh);
+        min-height: 100%;
+        margin-top: 30px;
+        @include flex-col(start,start);
+        
+    }
+    .leftSection{
+        position: relative;
+        @include size(100% , 1000px);
+    }
+    .rightSection{
+        position: relative;
+        @include size(100% , 100%);
+        @include flex-col(start,center);
+        background-color: transparent;
+        overflow: hidden;
+    }
+}

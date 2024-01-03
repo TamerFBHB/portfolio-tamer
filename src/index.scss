@@ -1,0 +1,171 @@
+@use "./SASS/Main" as *;
+
+:root{
+    //background
+    --bg-primary : #{$neutral-9};
+    --bg-shadow : #{$slate-1};
+
+
+    //navBar
+    --border-menu: #{$gray-9};
+    --bg-links : #{$blue-6}; //mode + bg-links:a
+    --bg-navBar : #{$neutral-9}; //color links
+    --bg-icon : #{$gray-3}; 
+    --bg-logo : #{$blue-6};
+    --text-logo : #000;
+
+    //global
+    --text : #fff ;
+    --border : #{$gray-5};
+    --thumb : #{$blue-6};
+
+    //home
+    --shadow-foto : #{rgba($slate-0 , 46%)};
+    --front : #{$blue-5};
+
+    //pages    
+    --bg-primary2 : #{$neutral-8};
+    --shadow-letter : #{$neutral-7};
+    --bg-words: #{$blue-5};
+
+    --border-btn : #{$teal-8};
+    --border-btn-active: #{$teal-2};
+    --text-btn: #fff;
+    --bg-btn : #{$blue-5};
+
+    --bg-card:  #{$neutral-7};
+    --shadow-card : #{$teal-5};
+
+    --shadow-contact : #{$blue-4};
+}
+
+
+.light{
+    //background
+    --bg-primary : #{$slate-0};  
+    --bg-shadow : #{$slate-6};
+
+    //navBar
+    --border-menu: #{$gray-0};    
+    --bg-links : #{$blue-6};
+    --bg-navBar : #{$blue-0};
+    --bg-icon : #{$blue-6};
+    --bg-logo : #{$blue-6};
+    --text-logo : #fff ;
+    --shadow-links :   ;
+    
+    //global
+    --text : #000 ;
+    --border : #{$gray-4};
+    --thumb : #{$blue-5};
+
+    //home
+    --shadow-foto : #{rgba($slate-9 , 75%)};
+    --front : #{$blue-6};
+
+    //pages    
+    --bg-primary2 : #{$slate-2};
+    --shadow-letter : #{$blue-2};
+    --bg-words: #{$blue-5};
+
+    --border-btn : #{$gray-5};
+    --border-btn-active: #{$blue-5};
+    --text-btn : #{$blue-5};
+    --bg-btn : #fff;
+
+    --bg-card:  #{$neutral-2};   
+    --shadow-card : #{$teal-8};
+
+    --shadow-contact : #{$blue-5};
+} 
+
+
+
+/* =======================
+    global setting
+    ======================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    }
+  *,
+  *:after,
+  *:before{
+    box-sizing: inherit;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    body {
+    font-family: "Khula", sans-serif;
+    scroll-behavior: smooth;
+    }
+
+
+
+
+    /* =======================
+    visible & hide pages
+    ======================*/
+    .hide{
+        transform:translateX(-70%);
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+    }
+    .apear{
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    @media (max-width:992px) {
+        .about,.resume,
+        .project,.contacts{
+            transform: translateX(0);
+            visibility: visible;
+            opacity: 1;      
+            z-index: 1; 
+        }
+    }
+
+/* ================================
+    to add color to links of navbar
+    ===============================*/
+    .active{
+        color: $yellow-5;
+        border: 2px solid $yellow-5;
+    }
+    .noActive{
+        color: var(--text-logo);
+        border: 2px solid var(--bg-icon);
+    }
+/* ================================
+    to add color to links of button
+    ===============================*/
+
+    .activation{
+        border: 1px solid var(--border-btn-active) ;
+        background-color: var(--bg-btn);
+        color: var(--text-btn);
+        opacity: 1;
+    }
+    .noActivation{
+        border: 1px solid var(--border-btn) ; 
+        background-color: var(--bg-primary);     
+        color: var(--text);
+        opacity: 0.5;
+    }
+
+/*=======================
+    screen mobile 
+=========================*/
+@media (max-width:1100px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

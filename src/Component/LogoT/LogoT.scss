@@ -1,0 +1,34 @@
+@use "../../SASS/Main" as *;
+
+
+.LogoT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+
+    border: 3px solid #0000;
+    background: linear-gradient(var(--bg-logo), var(--bg-logo)) padding-box, 
+                linear-gradient( var(--angle), $pink-9, $yellow-3) border-box;
+    animation: 8s rotate linear infinite;
+}
+.LogoT h1 {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Playball', cursive;
+    color: var(--text-logo);
+    text-shadow: $gray-10;
+}
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}

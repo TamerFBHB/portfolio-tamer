@@ -1,0 +1,11 @@
+@forward "./colors";
+@forward "./global-rules" ;
+@forward "./mixins" ;
+@forward "./Animation" ;
+@forward "./Fonts" ;
+@forward "./varible";
+@forward "./mixin-animation-dot";
+
+.red{
+    background-color: red ;
+}

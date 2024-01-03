@@ -1,0 +1,261 @@
+@use "../SASS/Main" as *;
+
+
+/*===============================
+    1- all home ( home + navBar)
+=================================*/
+.AllHome {
+  @include size(100%, 100%);
+  @include flex(center, start);
+  // z-index: 1000;
+}
+
+/*=====================================
+    2- home ( home without navBar)
+========================================*/
+.AllHome  .home {
+  position: relative;
+  @include size(100%, 100%);
+  margin-left: 5px;
+  background-color:  var(--bg-primary);
+  border-radius: 5px;
+}
+
+/*===============================
+    3- foto tamer
+=================================*/
+.home .cover{
+  position: relative;
+  @include size(100% , 60%);
+}
+.home .cover-tamer{
+  filter: drop-shadow(4px 4px 20px var(--shadow-foto));  
+  @include size(90% , 100%);
+  @include center ;
+  @include flex(center,center);
+}
+.home  .tamerPhoto {
+  @include size(90% , 100%);
+
+  -webkit-clip-path: polygon(
+      92.32051% 40%,
+      93.79385% 43.1596%,
+      94.69616% 46.52704%,
+      95% 50%,
+      94.69616% 53.47296%,
+      93.79385% 56.8404%,
+      92.32051% 60%,
+      79.82051% 81.65064%,
+      77.82089% 84.50639%,
+      75.35575% 86.97152%,
+      72.5% 88.97114%,
+      69.3404% 90.44449%,
+      65.97296% 91.34679%,
+      62.5% 91.65064%,
+      37.5% 91.65064%,
+      34.02704% 91.34679%,
+      30.6596% 90.44449%,
+      27.5% 88.97114%,
+      24.64425% 86.97152%,
+      22.17911% 84.50639%,
+      20.17949% 81.65064%,
+      7.67949% 60%,
+      6.20615% 56.8404%,
+      5.30384% 53.47296%,
+      5% 50%,
+      5.30384% 46.52704%,
+      6.20615% 43.1596%,
+      7.67949% 40%,
+      20.17949% 18.34936%,
+      22.17911% 15.49361%,
+      24.64425% 13.02848%,
+      27.5% 11.02886%,
+      30.6596% 9.55551%,
+      34.02704% 8.65321%,
+      37.5% 8.34936%,
+      62.5% 8.34936%,
+      65.97296% 8.65321%,
+      69.3404% 9.55551%,
+      72.5% 11.02886%,
+      75.35575% 13.02848%,
+      77.82089% 15.49361%,
+      79.82051% 18.34936%
+    );
+    clip-path: polygon(
+      92.32051% 40%,
+      93.79385% 43.1596%,
+      94.69616% 46.52704%,
+      95% 50%,
+      94.69616% 53.47296%,
+      93.79385% 56.8404%,
+      92.32051% 60%,
+      79.82051% 81.65064%,
+      77.82089% 84.50639%,
+      75.35575% 86.97152%,
+      72.5% 88.97114%,
+      69.3404% 90.44449%,
+      65.97296% 91.34679%,
+      62.5% 91.65064%,
+      37.5% 91.65064%,
+      34.02704% 91.34679%,
+      30.6596% 90.44449%,
+      27.5% 88.97114%,
+      24.64425% 86.97152%,
+      22.17911% 84.50639%,
+      20.17949% 81.65064%,
+      7.67949% 60%,
+      6.20615% 56.8404%,
+      5.30384% 53.47296%,
+      5% 50%,
+      5.30384% 46.52704%,
+      6.20615% 43.1596%,
+      7.67949% 40%,
+      20.17949% 18.34936%,
+      22.17911% 15.49361%,
+      24.64425% 13.02848%,
+      27.5% 11.02886%,
+      30.6596% 9.55551%,
+      34.02704% 8.65321%,
+      37.5% 8.34936%,
+      62.5% 8.34936%,
+      65.97296% 8.65321%,
+      69.3404% 9.55551%,
+      72.5% 11.02886%,
+      75.35575% 13.02848%,
+      77.82089% 15.49361%,
+      79.82051% 18.34936%
+    );
+  }
+
+  /*====================
+    4- name of tamer
+========================*/
+
+.home .informion h1 {
+  color: var(--text);
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Playball', cursive;
+  letter-spacing: 2px;
+  font-size: 40px
+}
+
+  /*====================
+    5- FrontEnd
+========================*/
+
+.home .informion .FrontEnd {
+  @include size(100% , 50px);
+  @include flex(center,center);
+  overflow: hidden;
+}
+.home .informion .FrontEnd p{
+  color: var(--front);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+  /*====================
+    6- social
+========================*/
+.home .social {
+  @include flex(center, center);
+  gap: 13px;
+  color: var(--text-color);
+  margin-top: 15px;
+}
+.home .social .icon {
+  font-size: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--text);
+  &:hover{
+    color: var(--front);
+  }
+}
+
+  /*====================
+    7- Footer 
+========================*/
+
+.home .Footer-home {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include size(100%, 60px);
+  @include flex(space-evenly, center);  
+  @include border-top-gradient(1px,transparent,var(--border),transparent)
+}
+.home .Footer-home div {
+  text-transform: uppercase;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  @include size(100%, 100%);
+  @include flex(center, center);
+  transition: 0.3s;
+}
+.home .Footer-home div:nth-child(1) {
+  @include border-right-gradient(1px,var(--border),var(--border),transparent)
+}
+.home .Footer-home div:hover{
+  color: $blue-5;
+  font-weight: bold;
+}
+/*==========================
+    8- screen mobile 1100px
+============================*/
+
+@media (max-width: 1100px) {
+  .AllHome {
+    @include size(100%, 100%);
+    @include flex(center, start);
+  }
+
+  .AllHome  .home {
+    position: relative;
+    @include size(80%, 100%);
+    margin-left: 7px;
+    border-radius: 5px;
+  }
+  .home  .tamerPhoto {
+    @include size(85% , 100%);
+  }
+  .home .informion h1 {
+    letter-spacing: 3px;
+    font-size: 50px
+  }
+  .home .informion .FrontEnd p{
+    font-size: 25px;
+  }
+  .home .social .icon {
+    font-size: 35px;
+  }
+}
+/*==========================
+    8- screen mobile 420px
+============================*/
+@media (max-width: 420px) {
+  .AllHome {
+    @include flex(start, start);
+    @include size(100%, calc(100vh - 150px));
+    padding: 0px;
+  }
+  .home {
+    position: relative;
+    @include size(100%, 100%); 
+    margin-left: 0px;
+  }
+  .avatar1 {
+    @include size(100%, 55%);
+  }
+  .home .Footer-home {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include size(100%, 60px);
+  }
+  
+  }

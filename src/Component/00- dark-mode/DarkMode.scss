@@ -1,0 +1,24 @@
+@use "../../SASS/Main" as *;
+
+
+.dark_mode{
+    position: relative;
+    cursor: pointer;
+    @include flex(center,center);    
+    background-color: transparent;
+    border : none;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.sun{
+    position: absolute;
+    @include center ;
+    font-size: 30px;
+    fill: $blue-6;
+}
+.moon{
+    position: absolute;
+    font-size: 30px;
+    fill: $blue-6;
+}

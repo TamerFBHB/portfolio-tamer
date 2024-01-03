@@ -1,0 +1,81 @@
+@use "../SASS/Main" as * ;
+
+/*=======================
+    1- all bar 
+=========================*/
+.BarMobile{    
+    position: fixed;     
+    left: 0;
+    @include size(100px, 60%);
+    margin-top: 4%;
+    margin-left: 4%;
+    display : none;
+}
+
+/*=======================
+    2- sideBar-above 
+=========================*/
+
+.BarMobile .sideBar-above{
+    @include size(100% , 25%);
+    border-radius: 5px;
+    background-color: var(--bg-navBar);
+}
+.BarMobile .sideBar-above .menu-mode{
+    gap: 15px;
+    @include size(100% , 100% );
+    @include flex-col(center,center) ;
+}
+
+/*=======================
+    3- sideBar-down 
+=========================*/
+
+.BarMobile .sideBar-down{
+    @include size(100% ,calc(75% - 8px));
+    margin: 8px 0 0 0;
+    background-color: var(--bg-navBar);
+    border-radius: 5px;
+}
+.BarMobile .sideBar-down ul{
+    @include size(100%, 100%);
+    padding: 12px 0;
+}
+.BarMobile .sideBar-down ul li {
+    @include size(100% ,calc((100% - 30px) /4));
+    @include flex(center , center);
+    box-shadow: 0px 1px 1px $gray-4;
+    cursor: pointer;
+}
+
+.BarMobile .sideBar-down ul li a{
+    @include flex-col(center , center);
+    gap: 8px;
+    @include size(80% , 70% );
+    background-color: var(--bg-links);
+    // color: var(--bg-navBar);
+    
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.BarMobile .sideBar-down ul li:last-child{
+box-shadow:none;
+}
+
+.sideBar-down ul li a .nav-icon{
+    font-size: 20px
+}
+
+/*=======================
+    4- media screen
+=========================*/
+
+@media (max-width: 1100px) {
+    .BarMobile{
+        display: block;
+    }
+}
+

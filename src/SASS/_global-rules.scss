@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+*,
+*:after,
+*:before{
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Khula", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*========================
+    scrollbar
+=========================*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-primary2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--thumb);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/*========================
+    container
+=========================*/
+
+.container {
+  width: 80%;
+}
+@media (max-width: 992px) {
+  .container {
+  width: 90%;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    width: 98%;
+  }
+}
+/*========================
+    UL
+=========================*/
+ul li{
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
