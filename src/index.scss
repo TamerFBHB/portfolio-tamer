@@ -161,6 +161,19 @@
         opacity: 0.5;
     }
 
+    /* ================================
+    slide animation for mobileBar
+    ===============================*/
+
+    @media (max-width:600px){
+        .showDone{
+            transform: translateX(0);
+        }
+        .showDone{
+            transform: translateX(-70px);
+        }
+}
+
 /*=======================
     screen mobile 
 =========================*/

@@ -4,9 +4,9 @@ import Lottie from "lottie-react";
 import aboutAnimat from "../Component/animation/contact.json"
 import { Background } from "@tsparticles/engine";
 
-const Contact = ({ state }) => {
+const Contact = ({ state , vContact }) => {
     return (
-        <div className={`contacts ${state === 4 ? "apear" : "hide"}`} id="MyContact">
+        <div ref={vContact} className={`contacts ${state === 4 ? "apear" : "hide"}`}>
             <h3><span>C</span>ontact</h3>
             <div className="main">
                 <div className="form ">

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { useState } from "react";
 import DataPortfolio from "./Data-Portfolio";
 
-const Project = ({ state }) => {
+const Project = ({ state , vProject}) => {
     const [active, setActive] = useState("React")
     const [arr, setArr] = useState(DataPortfolio)
 
@@ -20,7 +20,7 @@ const Project = ({ state }) => {
         setArr(newData)
     }
     return (
-        <div className={`project ${state === 3 ? "apear" : "hide"}`} id="MyProject">
+        <div ref= {vProject} className={`project ${state === 3 ? "apear" : "hide"}`} >
             <h3><span>P</span>roject</h3>
             <div className="myproject">
                 <h3>In this section, I will show some of the projects that I redesigned, through which I show my abilities:</h3>

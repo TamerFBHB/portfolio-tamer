@@ -5,9 +5,9 @@ import Lottie from "lottie-react";
 import resumeAnimat from "../Component/animation/resume.json"
 import Data from "./Data";
 
-const Edu = ({ state }) => {
+const Edu = ({ state ,vResume}) => {
     return (
-        <div className={`resume ${state === 2 ? "apear" : "hide"}`} id="MyResume">
+        <div ref= {vResume} className={`resume ${state === 2 ? "apear" : "hide"}`} >
             <h3><span>R</span>esume</h3>
             <div className="myResume">
 

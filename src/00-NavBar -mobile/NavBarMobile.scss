@@ -69,9 +69,9 @@ box-shadow:none;
     font-size: 20px
 }
 
-/*=======================
-    4- media screen
-=========================*/
+/*==========================
+    4- media screen 1100px
+============================*/
 
 @media (max-width: 1100px) {
     .BarMobile{
@@ -79,3 +79,41 @@ box-shadow:none;
     }
 }
 
+/*==========================
+    4- media screen 600px
+============================*/
+
+@media (max-width: 600px) {
+    .BarMobile{
+        position: fixed;     
+        top: 0;
+        left: 0;
+        @include size(60px, 70%);
+        margin-top: 0%;
+        margin-left:0%;
+        z-index: 1000;
+        transition: 0.5s;
+    }
+    .BarMobile .sideBar-above{
+        @include size(100% , 25%);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+.BarMobile .sideBar-down{
+    @include size(100% ,calc(75% - 8px));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.BarMobile .sideBar-down ul li a{
+    @include size(80% , 70% );
+
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight:normal;
+}
+.sideBar-down ul li a .nav-icon{
+    font-size: 15px
+}
+}

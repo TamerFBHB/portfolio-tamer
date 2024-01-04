@@ -3,28 +3,45 @@ import About from "./2-About/About"
 import Project from "./4-projects/Project"
 import Particule from "./Component/Particule"
 import "./App.scss"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Edu from "./3-Education/Edu"
 import Contact from "./5-Contact/Contact"
 
 
 function App() {
     const [state , setState] = useState(1);
+
+    
+    const scrollToSection = (Ref) => {
+      window.scrollTo({
+          top: Ref.current.offsetTop ,
+          behavior: "smooth",block: 'start',
+      })
+  }
+
+    const vAbout = useRef()
+    const vResume = useRef()
+    const vProject = useRef()
+    const vContact = useRef()
   return (
     <div className="mainPage">
       <Particule />
-      <div className="showPage">
+      <div className="showPage ">
         <div className="leftSection">
-          <Home setState={setState} state = {state}/>
+          <Home vAbout={vAbout}
+                vResume={vResume}
+                vProject={vProject}
+                vContact={vContact} 
+                scrollToSection={scrollToSection} setState={setState} state = {state}/>
         </div>
         <div className="rightSection">
-          <About state = {state}/>
+          <About state = {state} vAbout={vAbout}/>
 
-          <Edu state = {state}/>
+          <Edu state = {state} vResume={vResume}/>
 
-          <Project state = {state} />
+          <Project state = {state} vProject={vProject}/>
 
-          <Contact state = {state}/>
+          <Contact state = {state} vContact={vContact}/>
         </div>
       </div>
     </div>

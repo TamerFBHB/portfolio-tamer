@@ -4,10 +4,10 @@ import Lottie from "lottie-react";
 import aboutAnimat from "../Component/animation/dev.json"
 
 
-const About = ({ state }) => {
+const About = ({ state , vAbout}) => {
 
     return (
-        <div className={`about ${state === 1 ? "apear" : "hide"}`} id="MyAbout">
+        <div ref={vAbout} className={`about ${state === 1 ? "apear" : "hide"}`} >
 
             <div className='about-me'>
                 <h3><span>A</span>bout Me</h3>

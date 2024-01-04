@@ -1,0 +1,40 @@
+@use "../SASS/Main" as *;
+
+.mobilebar{
+    position: fixed;
+    inset: 0;
+    background-color: var(--bg-primary);
+    @include size(100% , 45px);
+    @include flex(space-between, center);
+    padding:  10px;
+    z-index:500; 
+    display: none;
+    background-color: blue;
+}
+.menuSideBar{
+    position: relative;
+    @include size(35px ,35px);
+    @include flex-col(center, center);
+    margin-right: 20px;
+}
+
+.menuSideBar span{
+    @include size(100% , 2px);
+    background-color: black;
+    display: block;
+}
+.menuSideBar span:nth-child(2){
+    margin: 6px 0;
+}
+.close{
+    
+}
+
+/*===========================
+    2- screen mobile 600px
+=============================*/
+@media (max-width:600px) {
+    .mobilebar{
+        display: flex;
+    }
+}

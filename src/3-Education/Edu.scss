@@ -65,6 +65,7 @@ z-index: -1;
 .resume .course{
   @include flex(center,start);  
   padding-right: 15px;
+  flex-wrap: wrap;
 }
 .course .group{
   @include size(60% , 100%);
@@ -111,7 +112,7 @@ z-index: -1;
 
 
 /*=======================
-    screen mobile 
+    screen mobile 1100px
 =========================*/
 @media (max-width: 1100px) {
   .resume{
@@ -125,4 +126,24 @@ z-index: -1;
   .resume .myResume{
       overflow-y: visible;
     }
+}
+
+/*=======================
+    screen mobile 600px
+=========================*/
+@media (max-width: 600px){
+  .resume{  
+    @include size(100%, fit-content);
+    background-color: var(--bg-primary2);
+    margin-left: 0px;
+    margin-top: 1px;
+    scroll-margin-top: 10px; 
+    z-index: 100;
+  }
+  .course .group{
+    @include size(100% , 100%);
+  }
+  .resume .course .animation{
+    @include size(100% , 100%);
+  }
 }

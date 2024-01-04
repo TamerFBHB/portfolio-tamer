@@ -212,16 +212,18 @@
   .AllHome {
     @include size(100%, 100%);
     @include flex(center, start);
+    margin-top: 15px;
   }
 
   .AllHome  .home {
     position: relative;
-    @include size(80%, 100%);
-    margin-left: 7px;
+    @include size(79%, 100%);
+    margin-left: 110px;
     border-radius: 5px;
   }
+  
   .home  .tamerPhoto {
-    @include size(85% , 100%);
+    @include size(75% , 100%);
   }
   .home .informion h1 {
     letter-spacing: 3px;
@@ -235,27 +237,34 @@
   }
 }
 /*==========================
-    8- screen mobile 420px
+    8- screen mobile 600px
 ============================*/
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .AllHome {
-    @include flex(start, start);
-    @include size(100%, calc(100vh - 150px));
-    padding: 0px;
+    @include size(100%, 100%);
+    @include flex(center, start);
   }
-  .home {
+
+  .AllHome  .home {
     position: relative;
-    @include size(100%, 100%); 
+    @include size(100%,92%);
     margin-left: 0px;
+    margin-top: 50px;
+    border-radius: 0px;
   }
-  .avatar1 {
-    @include size(100%, 55%);
+  .home .cover{
+    @include size(100% , 50%);
   }
-  .home .Footer-home {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    @include size(100%, 60px);
+
+  .home .informion h1 {
+    letter-spacing: 2px;
+    font-size: 35px
+  }
+  .home .informion .FrontEnd p{
+    font-size: 15px;
+  }
+  .home .social .icon {
+    font-size: 25px;
   }
   
   }

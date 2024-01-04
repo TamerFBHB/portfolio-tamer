@@ -32,3 +32,16 @@
     initial-value: 0deg;
     inherits: false;
 }
+/*==========================
+    8- screen mobile 420px
+============================*/
+@media (max-width: 420px) {
+    .LogoT {
+        width: 35px;
+        height: 35px;
+    }
+    .LogoT h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+}

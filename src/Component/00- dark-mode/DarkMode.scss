@@ -22,3 +22,15 @@
     font-size: 30px;
     fill: $blue-6;
 }
+
+/*==========================
+    8- screen mobile 420px
+============================*/
+@media (max-width: 420px) {
+    .sun{
+        font-size: 25px;
+    }
+    .moon{
+        font-size: 25px;
+    }
+}

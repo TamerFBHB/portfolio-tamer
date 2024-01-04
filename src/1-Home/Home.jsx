@@ -6,13 +6,21 @@ import { Textillate } from "textillate-react";
 import { IoLogoGithub } from "react-icons/io";
 import NavBarMobile from "../00-NavBar -mobile/NavBarMobile"
 import tamer from "../../public/images/tamer.jpg";
+import MobileBar from "../000-MobileBar/MobileBar";
+import { useState } from "react";
 
-const Home = ({state,setState}) => {
+const Home = ({state,setState, scrollToSection , vAbout,vResume,vProject,vContact}) => {
 
+    const [show,setShow] =useState(false)
     return (
         <div className='AllHome'  >
             <NavBar state = {state} setState={setState}/>
-            <NavBarMobile />
+            <NavBarMobile vAbout={vAbout}
+                vResume={vResume}
+                vProject={vProject}
+                vContact={vContact} 
+                scrollToSection={scrollToSection} show={show} setShow={setShow} />
+            <MobileBar setShow={setShow} show={show} />
             
             <div className='home'>
                 <div className="cover">

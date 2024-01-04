@@ -103,10 +103,11 @@ z-index: -1;
 
 .animation{
     @include size(100% , 90%);
-    @include flex(center, start);}
+    @include flex(center, start);
+}
 
 /*=======================
-    screen mobile 
+    screen mobile 1100px
 =========================*/
 @media (max-width: 1100px) {
     .about{
@@ -118,3 +119,32 @@ z-index: -1;
         scroll-margin-top: 50px; 
     }
 } 
+
+/*=======================
+    screen mobile 600px
+=========================*/
+@media (max-width: 600px) {
+    .about{
+        position: relative;   
+        @include size(100%, fit-content);
+        margin-left: 0px;  
+        margin-top: 0px; 
+        z-index: 100;
+    }
+
+    .about .about-me .about-information{
+        @include flex-col(start,start);
+    }
+    .about .about-me .about-information .hello{
+        @include size(95% , 100%);
+        border:none;
+    }
+    .about .about-me .about-information .hello p{
+        padding-right: 0px;
+    }
+
+    .about .about-me .about-information .about-ID{
+        @include size(90% , 100%);
+    }
+
+}
