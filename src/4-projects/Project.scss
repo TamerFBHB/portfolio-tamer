@@ -187,10 +187,11 @@ z-index: -1;
 
 @media (max-width: 600px){
   .project{ 
-    @include size(100% , fit-content);
+    @include size(100% , 200vh);
     padding: 10px 0;
     margin-left: 0px;
     margin-top: 1px;
+    overflow-y: scroll;
   }
   .cards-project .buttons a{
     @include size(150px,45px);    

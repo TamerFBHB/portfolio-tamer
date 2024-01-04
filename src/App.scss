@@ -63,7 +63,7 @@
 =============================*/
 @media (max-width: 600px) {
     .mainPage{
-        min-height: 7300px;
+        min-height: 5200px;
         @include flex(start,start);
     }
     .showPage{
@@ -82,7 +82,5 @@
         @include flex-col(start,center);
         background-color: transparent;
     }
-    .bg{
-        display: none;
-    }
+
 }

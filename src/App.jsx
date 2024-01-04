@@ -15,7 +15,7 @@ function App() {
     //to create move for pages to top when press links
     const scrollToSection = (Ref) => {
       window.scrollTo({
-          top: Ref.current.offsetTop -(-590),
+          top: Ref.current.offsetTop -(-570),
           behavior: "smooth",block: 'start',
       })
   }
