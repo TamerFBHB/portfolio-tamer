@@ -9,27 +9,36 @@
     padding:  10px;
     z-index:500; 
     display: none;
-    background-color: blue;
 }
 .menuSideBar{
     position: relative;
     @include size(35px ,35px);
-    @include flex-col(center, center);
     margin-right: 20px;
 }
 
 .menuSideBar span{
+    position: absolute;    
+    @include center;
     @include size(100% , 2px);
-    background-color: black;
-    display: block;
+    background-color: var(--text);
+    transition: 0.5s;
+}
+.menuSideBar span:nth-child(1){
+    margin: -10px 0px ;
 }
 .menuSideBar span:nth-child(2){
-    margin: 6px 0;
+    margin: 10px 0;
 }
 .close{
-    
+    position: absolute;
+    @include size(100%,100%);
+    color: var(--text);
+    font-size: 45px;
+    transition: 0.5s;
 }
-
+.none{
+    display: none;
+}
 /*===========================
     2- screen mobile 600px
 =============================*/

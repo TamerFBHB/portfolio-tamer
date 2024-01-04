@@ -82,4 +82,7 @@
         @include flex-col(start,center);
         background-color: transparent;
     }
+    .bg{
+        display: none;
+    }
 }

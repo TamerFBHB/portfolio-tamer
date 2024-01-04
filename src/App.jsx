@@ -14,7 +14,7 @@ function App() {
     
     const scrollToSection = (Ref) => {
       window.scrollTo({
-          top: Ref.current.offsetTop ,
+          top: Ref.current.offsetTop -(-590),
           behavior: "smooth",block: 'start',
       })
   }

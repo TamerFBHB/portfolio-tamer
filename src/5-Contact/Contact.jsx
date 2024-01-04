@@ -1,4 +1,4 @@
-import "./Contact.scss"
+ import "./Contact.scss"
 import ContactForm from "../Component/ContactForm/ContactForm"
 import Lottie from "lottie-react";
 import aboutAnimat from "../Component/animation/contact.json"
