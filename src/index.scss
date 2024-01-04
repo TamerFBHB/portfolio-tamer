@@ -2,17 +2,18 @@
 
 :root{
     //background
-    --bg-primary : #{$neutral-9};
+    --bg-primary : #{$neutral-8};
     --bg-shadow : #{$slate-1};
 
 
     //navBar
     --border-menu: #{$gray-9};
     --bg-links : #{$blue-6}; //mode + bg-links:a
-    --bg-navBar : #{$neutral-9}; //color links
+    --bg-navBar : #{$neutral-8}; //color links
     --bg-icon : #{$gray-3}; 
     --bg-logo : #{$blue-6};
     --text-logo : #000;
+    --bg-navMobile :#{$slate-8};
 
     //global
     --text : #fff ;
@@ -24,7 +25,7 @@
     --front : #{$blue-5};
 
     //pages    
-    --bg-primary2 : #{$neutral-8};
+    --bg-primary2 : #{$neutral-7};
     --shadow-letter : #{$neutral-7};
     --bg-words: #{$blue-5};
 
@@ -42,17 +43,18 @@
 
 .light{
     //background
-    --bg-primary : #{$slate-0};  
+    --bg-primary : #{$slate-1};  
     --bg-shadow : #{$slate-6};
 
     //navBar
     --border-menu: #{$gray-0};    
     --bg-links : #{$blue-6};
-    --bg-navBar : #{$blue-0};
+    --bg-navBar : #{$blue-1};
     --bg-icon : #{$blue-6};
     --bg-logo : #{$blue-6};
     --text-logo : #fff ;
     --shadow-links :   ;
+    --bg-navMobile :#{$slate-1};
     
     //global
     --text : #000 ;

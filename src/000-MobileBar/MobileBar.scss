@@ -10,6 +10,16 @@
     z-index:500; 
     display: none;
 }
+.mobilebar .myName{
+    overflow: hidden;
+}
+.mobilebar .myName p{
+    color: var(--text);
+    font-family: 'Playball', cursive;
+    font-size: 22px;
+    letter-spacing: 1px;
+
+}
 .menuSideBar{
     position: relative;
     @include size(35px ,35px);
