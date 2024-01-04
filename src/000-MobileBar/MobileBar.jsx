@@ -8,10 +8,10 @@ const MobileBar = ({show,setShow}) => {
             <LogoT />
             <div className="menuSideBar " 
             onClick={()=>{show?setShow(false):setShow(true)}}>
-                <span className={`close ${show? null : "none" }`}></span> 
-                <span className={`close ${show? null : "none" }`}></span> 
-                <span className={`close ${show? null : "none" }`}></span>
-            <IoClose  className={`close ${show? "none" : null}`} />
+                <span className={`close ${show? "none" : null }`}></span> 
+                <span className={`close ${show? "none" : null }`}></span> 
+                <span className={`close ${show? "none" : null }`}></span>
+            <IoClose  className={`close ${show? null : "none"}`} />
             </div>
         </div>
     );
