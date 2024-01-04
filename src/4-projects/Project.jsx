@@ -6,6 +6,7 @@ import { useState } from "react";
 import DataPortfolio from "./Data-Portfolio";
 
 const Project = ({ state , vProject}) => {
+    // to switch between buttons 
     const [active, setActive] = useState("React")
     const [arr, setArr] = useState(DataPortfolio)
 

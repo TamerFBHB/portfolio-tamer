@@ -11,7 +11,9 @@ import { useState } from "react";
 
 const Home = ({state,setState, scrollToSection , vAbout,vResume,vProject,vContact}) => {
 
+    // to create slider for navBar in mobile screen
     const [show,setShow] =useState(false)
+
     return (
         <div className='AllHome'  >
             <NavBar state = {state} setState={setState}/>

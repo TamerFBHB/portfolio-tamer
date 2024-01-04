@@ -63,7 +63,7 @@
 =============================*/
 @media (max-width: 600px) {
     .mainPage{
-        min-height: 7350px;
+        min-height: 7300px;
         @include flex(start,start);
     }
     .showPage{

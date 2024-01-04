@@ -18,7 +18,7 @@ const DataPortfolio = [{
 },
 {
     image: card2,
-    title: "React and tailwind",
+    title: "React and Tailwind",
     details: "Megano is a Clean, Modern, Creative & Responsive HTML5 Food Landing Page Template. It can also be used as Cafe Landing Page Template, Recipe or any other food related business or services.",
     url: "https://megaone-96310.web.app/",
     github: "https://github.com/TamerFBHB/megaone",
@@ -67,7 +67,7 @@ const DataPortfolio = [{
 },
 {
     image: card8,
-    title: "React",
+    title: "React and Sass",
     details: "this site is my old portfolio i design it with React ,fully responsive",
     url: "https://tamer-portfolio-30533.web.app/",
     github: "https://github.com/TamerFBHB/tamer-portfolio",

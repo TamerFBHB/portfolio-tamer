@@ -9,9 +9,10 @@ import Contact from "./5-Contact/Contact"
 
 
 function App() {
+  //to create switch between pages in big screen 
     const [state , setState] = useState(1);
 
-    
+    //to create move for pages to top when press links
     const scrollToSection = (Ref) => {
       window.scrollTo({
           top: Ref.current.offsetTop -(-590),
@@ -23,6 +24,7 @@ function App() {
     const vResume = useRef()
     const vProject = useRef()
     const vContact = useRef()
+
   return (
     <div className="mainPage">
       <Particule />

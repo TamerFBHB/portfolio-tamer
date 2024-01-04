@@ -7,6 +7,8 @@ import LogoT from "../Component/LogoT/LogoT"
 import { useState } from "react";
 
 const NavBarMobile = ({setShow , show , scrollToSection ,vAbout,vResume,vProject,vContact}) => {
+
+    //to add color yellow to links when active
     const [activebar , setActivebar] =useState(1)
     return (
         <div className={`BarMobile ${show? "showDone" : "noShow"}`}>
