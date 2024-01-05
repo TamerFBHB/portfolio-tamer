@@ -15,7 +15,7 @@ function App() {
     //to create move for pages to top when press links
     const scrollToSection = (Ref) => {
       window.scrollTo({
-          top: Ref.current.offsetTop -(-600),
+          top: Ref.current.offsetTop -(-660),
           behavior: "smooth",block: 'start',
       })
   }
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="mainPage">
-      <Particule className="particles"/>
+      <Particule className="particles" />
       <div className="showPage ">
         <div className="leftSection">
           <Home vAbout={vAbout}

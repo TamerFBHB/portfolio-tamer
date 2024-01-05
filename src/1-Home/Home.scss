@@ -219,7 +219,6 @@
     @include flex(center, start);
     margin-top: 015px;
   }
-
   .AllHome  .home {
     position: relative;
     @include size(79%, 100%);
@@ -261,9 +260,11 @@
     border-radius: 0px;
   }
   .home .cover{
-    @include size(100% , 50%);
+    @include size(100% , 280px);
   }
-
+  .home .informion{  
+  gap: 8px;
+}
   .home .informion h1 {
     letter-spacing: 2px;
     font-size: 35px

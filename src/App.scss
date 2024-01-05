@@ -16,7 +16,6 @@
 .leftSection{
     position: relative;
     @include size(40% , 100%);
-    // background-color: var(--bg-primary);
     transition: 1s;
     z-index: 100;
 }
@@ -40,7 +39,7 @@
     }
     .showPage{
         position: relative;
-        @include size(100vw , 100%);
+        @include size(100% , 100%);
         @include flex-col(start,start);
         
     }
@@ -52,6 +51,7 @@
         position: relative;
         @include size(100% , 100%);        
         @include flex-col(start,center);
+        background-color: transparent;
         overflow: hidden;
     }
 }
