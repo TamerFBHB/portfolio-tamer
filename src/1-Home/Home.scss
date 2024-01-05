@@ -26,7 +26,7 @@
 =================================*/
 .home .cover{
   position: relative;
-  @include size(100% , 450px);
+  @include size(90% , 50%);
 }
 .home .cover-tamer{
   filter: drop-shadow(4px 4px 20px var(--shadow-foto));  
@@ -226,7 +226,10 @@
     margin-left: 110px;
     border-radius: 5px;
   }
-  
+  .home .cover{
+    position: relative;
+    @include size(100% , 450px);
+  }
   .home  .tamerPhoto {
     @include size(75% , 100%);
   }

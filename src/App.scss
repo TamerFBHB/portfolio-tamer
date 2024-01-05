@@ -11,6 +11,7 @@
     @include flex(center,center);
     border-radius: 5px;
     z-index: 100;
+    overflow: hidden;
 }
 .leftSection{
     position: relative;
