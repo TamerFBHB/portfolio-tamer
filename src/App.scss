@@ -45,13 +45,12 @@
     }
     .leftSection{
         position: relative;
-        @include size(100% , 800px);
+        @include size(100% , 100%);
     }
     .rightSection{
         position: relative;
         @include size(100% , 100%);        
         @include flex-col(start,center);
-        margin-top: 10px;
         overflow: hidden;
     }
 }
