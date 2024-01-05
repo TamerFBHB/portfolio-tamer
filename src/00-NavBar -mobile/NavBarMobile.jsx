@@ -21,7 +21,7 @@ const NavBarMobile = ({setShow , show , scrollToSection ,vAbout,vResume,vProject
 
             <div className='sideBar-down'>
                 <ul>
-                    <li><a onClick={()=>{setActivebar(1); setShow(false); scrollToSection(vAbout) }} 
+                    <li><a onClick={()=>{setActivebar(1); setShow(false); scrollToSection(vAbout);  }} 
                     className={`${activebar === 1? "active" : "noActive"}`}>
                         <FaRegUser className='nav-icon' />
                         about

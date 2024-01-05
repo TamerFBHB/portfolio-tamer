@@ -13,12 +13,20 @@ function App() {
     const [state , setState] = useState(1);
 
     //to create move for pages to top when press links
-    const scrollToSection = (Ref) => {
+  const scrollToSection = (Ref) => {
+    var x = window.matchMedia("(max-width: 650px)")
+    if (x.matches){
       window.scrollTo({
-          top: Ref.current.offsetTop -(-660),
-          behavior: "smooth",block: 'start',
-      })
-  }
+        top: Ref.current.offsetTop -(-600),
+        behavior: "smooth",block: 'start',
+    })
+    }else {
+      window.scrollTo({
+        top: Ref.current.offsetTop -(-820),
+        behavior: "smooth",block: 'start',
+    })
+    }
+}
 
     const vAbout = useRef()
     const vResume = useRef()

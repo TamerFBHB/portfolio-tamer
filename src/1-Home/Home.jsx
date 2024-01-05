@@ -9,20 +9,20 @@ import tamer from "../../public/images/tamer.jpg";
 import MobileBar from "../000-MobileBar/MobileBar";
 import { useState } from "react";
 
-const Home = ({state,setState, scrollToSection , vAbout,vResume,vProject,vContact}) => {
+const Home = ({ state,setState, scrollToSection , vAbout,vResume,vProject,vContact}) => {
 
     // to create slider for navBar in mobile screen
     const [show,setShow] =useState(false)
 
     return (
         <div className='AllHome'  >
-            <NavBar state = {state} setState={setState}/>
+            <NavBar state = {state} setState={setState} />
             <NavBarMobile vAbout={vAbout}
                 vResume={vResume}
                 vProject={vProject}
-                vContact={vContact} 
+                vContact={vContact}  
                 scrollToSection={scrollToSection} show={show} setShow={setShow} />
-            <MobileBar setShow={setShow} show={show} />
+            <MobileBar setShow={setShow} show={show}  />
             
             <div className='home'>
                 <div className="cover">

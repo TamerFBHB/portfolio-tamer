@@ -5,7 +5,7 @@ import { BsEnvelope } from "react-icons/bs";
 import { MdCastForEducation } from "react-icons/md";
 import LogoT from "../Component/LogoT/LogoT"
 
-const NavBar = ({state,setState}) => {
+const NavBar = ({ state,setState}) => {
     return (
         <div className='Bar'>
             <div className='sideBar-above'>
@@ -17,7 +17,7 @@ const NavBar = ({state,setState}) => {
 
             <div className='sideBar-down'>
                 <ul>
-                    <li  ><a onClick={()=>{setState(1) }} 
+                    <li  ><a onClick={()=>{setState(1)}} 
                     className={`${state === 1? "active" : null}`}>
                         <FaRegUser className='nav-icon' />
                         about
