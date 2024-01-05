@@ -212,7 +212,7 @@
   .AllHome {
     @include size(100%, 100%);
     @include flex(center, start);
-    margin-top: 15px;
+    margin-top: 015px;
   }
 
   .AllHome  .home {
@@ -243,13 +243,13 @@
   .AllHome {
     @include size(100%, 100%);
     @include flex(center, start);
+    margin-top: 0;
   }
 
   .AllHome  .home {
     position: relative;
-    @include size(100%,92%);
+    @include size(100%,100%);
     margin-left: 0px;
-    margin-top: 50px;
     border-radius: 0px;
   }
   .home .cover{

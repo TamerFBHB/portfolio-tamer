@@ -151,12 +151,11 @@ z-index: -1;
 @media (max-width: 1100px) {
   .project{
     position: relative;   
-    @include size(calc(90% - 85px) , fit-content);
+    @include size(calc(90% - 85px) , 100%);
     padding: 10px 0;
     background-color: var(--bg-primary2);
     margin-left: 110px;
     margin-top: 10px;
-    scroll-margin-top: 10px; 
   }
   .project .myproject{
     overflow-y: visible;
@@ -187,7 +186,7 @@ z-index: -1;
 
 @media (max-width: 600px){
   .project{ 
-    @include size(100% , 200vh);
+    @include size(100% , 100%);
     padding: 10px 0;
     margin-left: 0px;
     margin-top: 1px;

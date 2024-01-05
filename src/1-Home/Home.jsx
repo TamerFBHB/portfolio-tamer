@@ -72,7 +72,7 @@ const Home = ({state,setState, scrollToSection , vAbout,vResume,vProject,vContac
                 </div>
                 <div className='Footer-home'>
                     <div>download cv</div>
-                    <div onClick={()=>{setState(4)}}>contact me</div>
+                    <div onClick={()=>{setState(4);scrollToSection(vContact) }}>contact me</div>
                 </div>
             </div>
         </div>

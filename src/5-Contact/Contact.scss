@@ -75,7 +75,7 @@ z-index: -1;
   .contacts{ 
     @include size(100% , fit-content);
     margin-left: 0px;
-    margin-top: 1px;
+    margin-top: 5px; 
   }
   .main{
     flex-wrap: wrap;

@@ -116,7 +116,9 @@ z-index: -1;
         background-color: var(--bg-primary2);
         margin-left: 110px;  
         margin-top: 10px; 
-        scroll-margin-top: 50px; 
+    }
+    .about .about-me  .about-ID ul  li:first-child p{
+        font-size: 16px;
     }
 } 
 

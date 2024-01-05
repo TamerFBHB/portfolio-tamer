@@ -25,7 +25,6 @@ const Particule = () => {
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={{
-
                 background: {
                     color: {
                         value: "#06b6d4",
@@ -38,8 +37,8 @@ const Particule = () => {
                     height: " 100%",
                     top: " 0%",
                     left: " 0%",
-                    right:"0",
-                    bottom:"0",
+                    right: "0",
+                    bottom: "0",
                 },
                 fpsLimit: 120,
                 interactivity: {
@@ -87,7 +86,8 @@ const Particule = () => {
                     size: { value: { min: 1, max: 5 }, },
                 },
                 detectRetina: true,
-            }}
+            }
+            }
         />
 
     )
