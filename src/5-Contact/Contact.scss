@@ -50,7 +50,7 @@ z-index: -1;
 }
 .main .animy{
   @include flex(end,start);
-  @include size(50% , 100%);
+  @include size(40% , 100%);
   margin-top: 50px;
 }
 

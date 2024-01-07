@@ -87,13 +87,13 @@ z-index: -1;
   padding: 10px 0;
   flex-wrap: wrap;
   row-gap: 15px;
-  column-gap: 18px;
+  column-gap: 15px;
   @include border-left-gradient(1px,var(--border),var(--border),transparent);
 
 }
 
 .cards-project .card{
-  @include size(250px , fit-content);
+  @include size(220px , fit-content);
   box-shadow: 0px 0px 4px var(--shadow-card) , 0px -0px 4px var(--shadow-card);
   border-radius: 5px;
   transition: 0.5s;    
