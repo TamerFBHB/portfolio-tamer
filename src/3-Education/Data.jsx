@@ -6,6 +6,7 @@ import box5 from "../../public/images/sass.png"
 import box6 from "../../public/images/Bootstrap.png"
 import box7 from "../../public/images/tailwind.png"
 import box8 from "../../public/images/vite.svg"
+import box9 from "../../public/images/next.png"
 const Data = [
     {
     image : box1,
@@ -38,6 +39,10 @@ const Data = [
     {
         image : box8,
         name : "vite"
+    },
+    {
+        image : box9,
+        name : "Next.js"
         },
 ]
 

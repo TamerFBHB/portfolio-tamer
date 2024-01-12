@@ -127,8 +127,9 @@ z-index: -1;
   @include flex(start , start);
   margin: 1px 0;
   padding: 8px 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
+  text-align: justify;
 }
 
 .cards .body-card .links{
