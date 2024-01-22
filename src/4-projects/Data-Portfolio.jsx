@@ -6,9 +6,19 @@ import card5 from "../../public/images/midical.png"
 import card6 from "../../public/images/whale.png"
 import card7 from "../../public/images/portfolio-avatar.png"
 import card8 from "../../public/images/tamer-portfolio.png"
+import card9 from '../../public/images/products.png'
 
 
-const DataPortfolio = [{
+const DataPortfolio = [
+    {
+        image: card9,
+        title: "Next and Sass",
+        details: "this site is small market i design it with NEXT.js and fetch data from post placholder with AXIOS ,fully responsive",
+        url: "https://project-next-js-alpha.vercel.app/",
+        github: "https://github.com/TamerFBHB/project-next.js",
+        category :["Next" , "sass"],
+    },
+    {
     image: card1,
     title: "React and Bootstrap",
     details: "Foodera is a Clean, Modern, Creative & Responsive HTML5 Food Landing Page Template. It can also be used as Cafe Landing Page Template, Recipe or any other food related business or services.",
@@ -69,10 +79,11 @@ const DataPortfolio = [{
     image: card8,
     title: "React and Sass",
     details: "this site is my old portfolio i design it with React ,fully responsive",
-    url: "https://tamer-portfolio-30533.web.app/",
-    github: "https://github.com/TamerFBHB/tamer-portfolio",
+    url: "https://old-portfolio-f5806.web.app/",
+    github: "https://github.com/TamerFBHB/old-portfolio",
     category :["React" , "sass","portfolio"],
 }
+
 ]
 
 export default DataPortfolio;

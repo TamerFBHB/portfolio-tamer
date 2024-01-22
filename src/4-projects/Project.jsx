@@ -7,7 +7,7 @@ import DataPortfolio from "./Data-Portfolio";
 
 const Project = ({ state , vProject}) => {
     // to switch between buttons 
-    const [active, setActive] = useState("React")
+    const [active, setActive] = useState("All")
     const [arr, setArr] = useState(DataPortfolio)
 
     const handleClick = (Data) => {
@@ -28,19 +28,29 @@ const Project = ({ state , vProject}) => {
                 <div className="cards-project" >
                     <div className="buttons">
 
+                    <a onClick={() => { setArr(DataPortfolio) ; setActive("All")}} 
+                            className={`active ${active === "All" ? "activation" : "noActivation"}`}> All</a>
+
                         <a onClick={() => { handleClick("React") }} 
-                            className={`active ${active === "React" ? "activation" : "noActivation"}`}>
-                            React</a>
+                            className={`active ${active === "React" ? "activation" : "noActivation"}`}> React</a>
+
                         <a onClick={() => { handleClick("Bootstrap") }} 
                             className={`active ${active === "Bootstrap" ? "activation" : "noActivation"}`}>bootstrap</a>
+
                         <a onClick={() => { handleClick("tailwind") }} 
                             className={`active ${active === "tailwind" ? "activation" : "noActivation"}`}>tailwind</a>
+
                         <a onClick={() => { handleClick("sass") }} 
                             className={`active ${active === "sass" ? "activation" : "noActivation"}`}>sass</a>
+
                         <a onClick={() => { handleClick("portfolio") }} 
                             className={`active ${active === "portfolio" ? "activation" : "noActivation"}`}>portfolio</a>
+
                         <a onClick={() => { handleClick("food") }} 
                             className={`active ${active === "food" ? "activation" : "noActivation"}`}>food</a>
+
+                        <a onClick={() => { handleClick("Next") }} 
+                            className={`active ${active === "Next" ? "activation" : "noActivation"}`}>next.js</a>
                     </div>
                     <div className="cards" >
 

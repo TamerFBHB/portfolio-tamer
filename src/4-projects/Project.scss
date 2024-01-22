@@ -83,13 +83,12 @@ z-index: -1;
 ============================*/
 .cards-project  .cards{
   @include size(70%,100%);
-  @include flex(center,start);
-  padding: 10px 0;
+  @include flex(start,start);
+  padding: 10px 0px;
   flex-wrap: wrap;
   row-gap: 15px;
   column-gap: 15px;
-  @include border-left-gradient(1px,var(--border),var(--border),transparent);
-
+ 
 }
 
 .cards-project .card{
