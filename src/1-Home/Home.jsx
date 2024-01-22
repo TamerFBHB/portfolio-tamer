@@ -27,7 +27,7 @@ const Home = ({ state,setState, scrollToSection , vAbout,vResume,vProject,vConta
             <div className='home'>
                 <div className="cover">
                     <div className="cover-tamer">
-                        <img src={tamer} alt='' className='tamerPhoto' />
+                        <img src={tamer} alt='' className='tamerPhoto' loading="lazy"/>
                     </div>
                 </div>
                 <div className='informion'>
