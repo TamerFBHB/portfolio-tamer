@@ -29,6 +29,10 @@ form{
   @include flex(center,center);
   gap: 20px;
 }
+.sendEmail  form{
+  @include flex-col(center,center);
+  gap: 0px;
+}
 .sendEmail div label {
   margin-bottom: 5px;
   @include size(150px ,30px);
@@ -70,7 +74,6 @@ margin-bottom: 0;
 
 .sendEmail .submit {
   @include size(150px ,20px);  
-
   background-image: linear-gradient(to right, $blue-5 0%, $blue-8 51%, #176ab7 100%);
   box-shadow: 0 1px 3px var(--shadow-contact), 0 1px 2px var(--shadow-contact);
   background-size: 200% auto;
