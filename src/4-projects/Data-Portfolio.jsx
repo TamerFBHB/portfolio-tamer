@@ -7,6 +7,7 @@ import card6 from "../../public/images/whale.png"
 import card7 from "../../public/images/portfolio-avatar.png"
 import card8 from "../../public/images/tamer-portfolio.png"
 import card9 from '../../public/images/products.png'
+import card10 from '../../public/images/ryan.png'
 
 
 const DataPortfolio = [
@@ -82,8 +83,15 @@ const DataPortfolio = [
     url: "https://old-portfolio-f5806.web.app/",
     github: "https://github.com/TamerFBHB/old-portfolio",
     category :["React" , "sass","portfolio"],
+},
+{
+    image: card10,
+    title: "React and Sass",
+    details: "this site is portfolio like my portfolio i design it with Next and Sass ,fully responsive",
+    url: "https://ryan-portfolio-six.vercel.app/",
+    github: "https://github.com/TamerFBHB/ryan-portfolio",
+    category :["Next" , "sass","portfolio"],
 }
-
 ]
 
 export default DataPortfolio;
