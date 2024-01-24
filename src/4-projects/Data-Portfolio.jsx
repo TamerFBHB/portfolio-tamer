@@ -88,7 +88,7 @@ const DataPortfolio = [
     image: card10,
     title: "Next and Sass",
     details: "this site is portfolio like my portfolio i design it with Next and Sass ,fully responsive",
-    url: "https://ryan-portfolio-six.vercel.app/",
+    url: "https://portfolio-ryan-seven.vercel.app/",
     github: "https://github.com/TamerFBHB/ryan-portfolio",
     category :["Next" , "sass","portfolio"],
 }
