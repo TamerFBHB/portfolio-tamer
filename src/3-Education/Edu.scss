@@ -86,14 +86,19 @@ z-index: -1;
 
 }
 .resume .course .card{
-  @include size(110px , 140px);
+  @include size(100px , 135px);
   border-radius: 8px;
   gap: 10px;
   box-shadow: 0 0 10px $teal-8;  
   margin-left: 20px;
+  transition: 0.3s;
+  &:Hover{
+    box-shadow: 1px 1px 10px $teal-3;  
+    transform: scale(1.05)
+  }
 }
 .resume .course .card img{
-  @include size(100% , 100px);
+  @include size(100% , 95px);
 }
 .resume .course .card p{
   text-transform: uppercase;
