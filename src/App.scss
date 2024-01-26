@@ -33,23 +33,23 @@
 
     .mainPage{
         position: relative;
-        @include size(100vw , 100%);
+        @include size(100dvw , 100dvh);
         @include flex(start,center);
         overflow: hidden;
     }
     .showPage{
         position: relative;
-        @include size(100% , 100%);
+        @include size(100dvw , 100dvh);
         @include flex-col(start,start);
         
     }
     .leftSection{
         position: relative;
-        @include size(100% , 100%);
+        @include size(100dvw , 100dvh);
     }
     .rightSection{
         position: relative;
-        @include size(100% , 100%);        
+        @include size(100dvw , 100dvh);   
         @include flex-col(start,center);
         background-color: transparent;
         overflow: hidden;
@@ -64,7 +64,7 @@
         @include flex(start,start);
     }
     .showPage{
-        @include size(100vw , 100%);
+        @include size(100dvw , 100dvh);
         @include flex-col(start,start);
     }
     .leftSection{
@@ -73,7 +73,7 @@
     }
     .rightSection{
         position: relative;
-        @include size(100% , 100%);
+        @include size(100dvw , 100dvh);
         margin-top: 5px;
         @include flex-col(start,center);
         background-color: transparent;
