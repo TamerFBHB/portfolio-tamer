@@ -60,16 +60,17 @@
 =============================*/
 @media (max-width: 600px) {
     .mainPage{
-        margin-top: 60px;
+        margin-top: 0px;
         @include flex(start,start);
     }
     .showPage{
         @include size(100vw , 100%);
         @include flex-col(start,start);
+        border-radius: 0px;
     }
     .leftSection{
         position: relative;
-        @include size(100% ,calc(100vh - 60px));
+        @include size(100% ,100dvh);
     }
     .rightSection{
         position: relative;

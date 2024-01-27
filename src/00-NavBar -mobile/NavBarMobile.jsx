@@ -22,22 +22,22 @@ const NavBarMobile = ({setShow , show , scrollToSection ,vAbout,vResume,vProject
             <div className='sideBar-down'>
                 <ul>
                     <li><a onClick={()=>{setActivebar(1); setShow(false); scrollToSection(vAbout);  }} 
-                    className={`${activebar === 1? "active" : "noActive"}`}>
+                    className={`${activebar === 1? "focus" : "nofocus"}`}>
                         <FaRegUser className='nav-icon' />
                         about
                     </a></li>
                     <li><a onClick={()=>{setActivebar(2);setShow(false); scrollToSection(vResume) }} 
-                    className={`${activebar === 2? "active" : "noActive"}`}>
+                    className={`${activebar === 2? "focus" : "nofocus"}`}>
                         <MdCastForEducation className='nav-icon' />
                         Resume
                     </a></li>
                     <li><a onClick={()=>{setActivebar(3);setShow(false); scrollToSection(vProject) }} 
-                    className={`${activebar === 3? "active" : "noActive"}`}>
+                    className={`${activebar === 3? "focus" : "nofocus"}`}>
                         <FaRegFolderOpen className='nav-icon' />
                         projects
                     </a></li>
                     <li><a onClick={()=>{setActivebar(4);setShow(false); scrollToSection(vContact)}} 
-                    className={`${activebar === 4? "active" : "noActive"}`}>
+                    className={`${activebar === 4? "focus" : "nofocus"}`}>
                         <BsEnvelope className='nav-icon' />
                         contact
                     </a></li>

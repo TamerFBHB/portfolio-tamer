@@ -6,28 +6,34 @@ import { Textillate } from "textillate-react";
 import { IoLogoGithub } from "react-icons/io";
 import NavBarMobile from "../00-NavBar -mobile/NavBarMobile"
 import tamer from "../../public/images/tamer.jpg";
-import MobileBar from "../000-MobileBar/MobileBar";
 import { useState } from "react";
 
-const Home = ({ state,setState, scrollToSection , vAbout,vResume,vProject,vContact}) => {
+
+const Home = ({ state, setState, scrollToSection, vAbout, vResume, vProject, vContact }) => {
 
     // to create slider for navBar in mobile screen
-    const [show,setShow] =useState(false)
+    const [show, setShow] = useState(false)
 
     return (
         <div className='AllHome'  >
-            <NavBar state = {state} setState={setState} />
+            <NavBar state={state} setState={setState} />
             <NavBarMobile vAbout={vAbout}
                 vResume={vResume}
                 vProject={vProject}
-                vContact={vContact}  
+                vContact={vContact}
                 scrollToSection={scrollToSection} show={show} setShow={setShow} />
-            <MobileBar setShow={setShow} show={show}  />
-            
+
             <div className='home'>
+                {/* *** menu to close in mobile screen *** */}
+                <div className={` barToclose  ${show ? "active" : null} `}
+                    onClick={() => { show ? setShow(false) : setShow(true) }}>
+                    <div className={`content ${show ? "active" : ""}`}>
+                    </div>
+                </div>
+                {/* **************************************** */}
                 <div className="cover">
                     <div className="cover-tamer">
-                        <img src={tamer} alt='' className='tamerPhoto' loading="lazy"/>
+                        <img src={tamer} alt='' className='tamerPhoto' loading="lazy" />
                     </div>
                 </div>
                 <div className='informion'>
@@ -72,7 +78,7 @@ const Home = ({ state,setState, scrollToSection , vAbout,vResume,vProject,vConta
                 </div>
                 <div className='Footer-home'>
                     <div>download cv</div>
-                    <div onClick={()=>{setState(4);scrollToSection(vContact) }}>contact me</div>
+                    <div onClick={() => { setState(4); scrollToSection(vContact) }}>contact me</div>
                 </div>
             </div>
         </div>

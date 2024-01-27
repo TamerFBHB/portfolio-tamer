@@ -210,6 +210,53 @@
   font-weight: bold;
 }
 /*==========================
+    7 - menuToClose
+============================*/
+%closeBar{
+  content: "";
+  position: absolute;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.barToclose{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  @include size(30px , 40px);
+  overflow: hidden;
+  display: none;
+}
+.content{
+  @extend %closeBar;
+  inset: 29px -10px 8px;
+}
+.barToclose::after{
+@extend %closeBar;
+inset: 18.5px -10px;
+}
+
+.barToclose::before{
+  @extend %closeBar;    
+  inset: 8px -10px 29px;
+  z-index: 2;
+}
+.active .content{
+  display: none;
+}
+.active{
+  @include size(20px , 40px);
+}
+.active::after{
+  transform: rotate(45deg);
+  background-color: red;
+}
+.active::before{
+  inset: 18.5px -10px;
+  transform: rotate(135deg);
+  background-color: red;
+}
+/*==========================
     8- screen mobile 1100px
 ============================*/
 
@@ -243,6 +290,8 @@
     font-size: 35px;
   }
 }
+
+
 /*==========================
     8- screen mobile 600px
 ============================*/
@@ -252,7 +301,9 @@
     @include flex(center, start);
     margin-top: 0;
   }
-
+.barToclose{
+  display: block;
+}
   .AllHome  .home {
     position: relative;
     @include size(100%,100%);
@@ -260,7 +311,8 @@
     border-radius: 0px;
   }
   .home .cover{
-    @include size(100% , 280px);
+    @include size(100% , 300px);    
+    margin-top: 50px;
   }
   .home .informion{  
   gap: 8px;

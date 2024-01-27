@@ -135,11 +135,11 @@
 /* ================================
     to add color to links of navbar
     ===============================*/
-    .active{
+    .focus{
         color: $yellow-5;
         border: 2px solid $yellow-5;
     }
-    .noActive{
+    .nofocus{
         color: var(--text-logo);
         border: 2px solid var(--bg-icon);
     }

@@ -20,7 +20,6 @@ const Edu = ({ state ,vResume}) => {
                     <MdOutlineCastForEducation className="edu-icon" />
                     <h3 className="">Courses :</h3>
                 </div>
-
                 <div className="course">
                     <div className="group">
                         <h5>

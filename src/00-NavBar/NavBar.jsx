@@ -18,22 +18,22 @@ const NavBar = ({ state,setState}) => {
             <div className='sideBar-down'>
                 <ul>
                     <li  ><a onClick={()=>{setState(1)}} 
-                    className={`${state === 1? "active" : null}`}>
+                    className={`${state === 1? "focus" : null}`}>
                         <FaRegUser className='nav-icon' />
                         about
                     </a></li>
                     <li onClick={()=>{setState(2)}}
-                    ><a className={`${state === 2? "active" : null}`}>
+                    ><a className={`${state === 2? "focus" : null}`}>
                         <MdCastForEducation className='nav-icon' />
                         Resume
                     </a></li>
                     <li onClick={()=>{setState(3)}}
-                    ><a className={`${state === 3? "active" : null}`}>
+                    ><a className={`${state === 3? "focus" : null}`}>
                         <FaRegFolderOpen className='nav-icon' />
                         projects
                     </a></li>
                     <li onClick={()=>{setState(4)}}
-                    ><a className={`${state === 4? "active" : null}`}>
+                    ><a className={`${state === 4? "focus" : null}`}>
                         <BsEnvelope className='nav-icon' />
                         contact
                     </a></li>
