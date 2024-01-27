@@ -150,4 +150,7 @@ z-index: -1;
   .resume .course .animation{
     @include size(100% , 100%);
   }
+  .resume .course .animation{
+    @include size(90% , 100%);
+  }
 }
