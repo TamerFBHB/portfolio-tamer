@@ -164,7 +164,7 @@ z-index: -1;
     flex-wrap: wrap;
     }
   .cards-project .buttons{
-    @include size(100%,150px);  
+    @include size(100%,200px);  
     @include flex(center,start);
     flex-direction: row;
     gap: 5px;
