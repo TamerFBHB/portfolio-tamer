@@ -17,7 +17,7 @@ function App() {
     var x = window.matchMedia("(max-width: 650px)")
     if (x.matches){
       window.scrollTo({
-        top: Ref.current.offsetTop -(-670),
+        top: Ref.current.offsetTop -(-620),
         behavior: "smooth",block: 'start',
     })
     }else {
