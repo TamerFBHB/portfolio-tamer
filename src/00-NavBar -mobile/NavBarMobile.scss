@@ -44,14 +44,13 @@
 .BarMobile .sideBar-down ul li {
     @include size(100% ,calc((100% - 30px) /4));
     @include flex(center , center);
-    // box-shadow: 0px 1px 1px $gray-4;
     cursor: pointer;
 }
 
 .BarMobile .sideBar-down ul li a{
     @include flex-col(center , center);
     gap: 8px;
-    @include size(80% , 70% );
+    @include size(80% , 80% );
     background-color: var(--bg-links);
     // color: var(--bg-navBar);
     
