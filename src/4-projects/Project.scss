@@ -192,6 +192,9 @@ z-index: -1;
     margin-top: 1px;
     overflow-y: scroll;
   }
+  .cards-project .buttons{
+    @include size(100%,180px);  
+  }
   .cards-project .buttons a{
     @include size(150px,45px);    
   }
