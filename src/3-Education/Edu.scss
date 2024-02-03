@@ -86,26 +86,40 @@ z-index: -1;
 
 }
 .resume .course .card{
+  position: relative;
   @include size(100px , 135px);
   border-radius: 8px;
   gap: 10px;
   box-shadow: 0 0 10px $teal-8;  
   margin-left: 20px;
-  transition: 0.3s;
+  transition: 0.5s;
+
   &:Hover{
-    box-shadow: 1px 1px 10px $teal-3;  
-    transform: scale(1.05)
+    box-shadow: 1px 30px 10px $teal-5;  
+    transform: rotatex(-45deg);
+    background-color: $slate-8;
   }
 }
-.resume .course .card img{
+.resume .course .card .image{
   @include size(100% , 95px);
+  transition: 0.5s;
 }
+.card:hover   .image{
+  transform: rotatex(20deg);
+  height: 180px !important; 
+  margin-top: -70px;
+}
+
 .resume .course .card p{
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   color: var(--text);
+  transition: 0.2s;
+}
+.card:hover  p{
+opacity: 0
 }
   /*========================
     4- Animation section
