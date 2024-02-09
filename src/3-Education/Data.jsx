@@ -12,7 +12,7 @@ const Data = [
     image : box1,
     name : "HTML"
     },
-      {
+    {
     image : box2,
     name : "css"
     },

@@ -29,7 +29,7 @@ const Edu = ({ state ,vResume}) => {
                             {Data.map((item) => {
                                 return (
                                     <div className="card" key={item}>
-                                        <img src={item.image} alt="" />
+                                        <img src={item.image} alt="" className="image"/>
                                         <p>{item.name}</p>
                                     </div>
                                 );
