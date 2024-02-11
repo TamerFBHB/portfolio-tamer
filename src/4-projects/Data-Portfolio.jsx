@@ -84,7 +84,14 @@ const DataPortfolio = [
     github: "https://github.com/TamerFBHB/old-portfolio",
     category :["React" , "sass","portfolio"],
 },
-
+{
+    image: card10,
+    title: "Next and Sass",
+    details: "this site is portfolio like my portfolio i design it with Next and Sass ,fully responsive",
+    url: "https://portfolio-ryan-steel.vercel.app/",
+    github: "https://github.com/TamerFBHB/ryan-portfolio",
+    category :["Next" , "sass","portfolio"],
+}
 ]
 
 export default DataPortfolio;
