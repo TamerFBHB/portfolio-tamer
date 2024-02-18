@@ -8,6 +8,7 @@ import card7 from "../../public/images/portfolio-avatar.png"
 import card8 from "../../public/images/tamer-portfolio.png"
 import card9 from '../../public/images/products.png'
 import card10 from '../../public/images/ryan.png'
+import card11 from '../../public/images/smith.png'
 
 
 const DataPortfolio = [
@@ -90,6 +91,14 @@ const DataPortfolio = [
     details: "this site is portfolio like my portfolio i design it with Next and Sass ,fully responsive",
     url: "https://portfolio-ryan-steel.vercel.app/",
     github: "https://github.com/TamerFBHB/ryan-portfolio",
+    category :["Next" , "sass","portfolio"],
+}
+{
+    image: card11,
+    title: "Next and Sass",
+    details: "this site is portfolio for photografer i design it with Next and Sass ,fully responsive",
+    url: "https://portfolio-smith.vercel.app/",
+    github: "https://github.com/TamerFBHB/portfolio-smith",
     category :["Next" , "sass","portfolio"],
 }
 ]
