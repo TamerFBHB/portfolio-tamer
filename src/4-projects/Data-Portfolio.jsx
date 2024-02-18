@@ -92,7 +92,7 @@ const DataPortfolio = [
     url: "https://portfolio-ryan-steel.vercel.app/",
     github: "https://github.com/TamerFBHB/ryan-portfolio",
     category :["Next" , "sass","portfolio"],
-}
+},
 {
     image: card11,
     title: "Next and Sass",
