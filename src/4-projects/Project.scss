@@ -172,8 +172,6 @@ z-index: -1;
     @include flex(center,center);
   }
   .cards-project  .cards{
-    @include size(100%,90%);      
-    @include flex(center,start);  
     border: none;
   }
 }
@@ -194,5 +192,12 @@ z-index: -1;
   }
   .cards-project .buttons a{
     @include size(150px,45px);    
+  }
+  .cards-project  .cards{
+    @include flex-col(center,center);
+    border: none;
+  }
+  .cards-project  .cards .card{    
+  @include size(250px , fit-content);
   }
 }

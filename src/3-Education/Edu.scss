@@ -96,7 +96,7 @@ z-index: -1;
 
   &:Hover{
     box-shadow: 1px 30px 10px $teal-5;  
-    transform: rotatex(-45deg);
+    transform: rotatex(-60deg);
     background-color: $slate-8;
   }
 }
@@ -105,7 +105,7 @@ z-index: -1;
   transition: 0.5s;
 }
 .card:hover   .image{
-  transform: rotatex(20deg);
+  transform: rotatex(0deg);
   height: 180px !important; 
   margin-top: -70px;
 }
