@@ -103,7 +103,7 @@ z-index: -1;
 .resume .course .card2 {
   @include size(120px , 135px);
   @include flex-col(center,center);
-  background-color: #1a1a1a;
+  background-color: var(--bg-primary2);
   border-radius: 10px;
   transition: all .2s;
   &:hover {
