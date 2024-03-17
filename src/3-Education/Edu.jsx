@@ -5,9 +5,9 @@ import Lottie from "lottie-react";
 import resumeAnimat from "../Component/animation/resume.json"
 import Data from "./Data";
 
-const Edu = ({ state ,vResume}) => {
+const Edu = ({ state, vResume }) => {
     return (
-        <div ref= {vResume} className={`resume ${state === 2 ? "apear" : "hide"}`} >
+        <div ref={vResume} className={`resume ${state === 2 ? "apear" : "hide"}`} >
             <h3><span>R</span>esume</h3>
             <div className="myResume">
 
@@ -29,8 +29,10 @@ const Edu = ({ state ,vResume}) => {
                             {Data.map((item) => {
                                 return (
                                     <div className="card" key={item}>
-                                        <img src={item.image} alt="" className="image"/>
-                                        <p>{item.name}</p>
+                                        <div className="card2">
+                                            <img src={item.image} alt="" className="image" />
+                                            <p>{item.name}</p>
+                                        </div>
                                     </div>
                                 );
                             })}

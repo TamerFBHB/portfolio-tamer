@@ -87,27 +87,38 @@ z-index: -1;
 }
 .resume .course .card{
   position: relative;
-  @include size(100px , 135px);
-  border-radius: 8px;
-  gap: 10px;
-  box-shadow: 0 0 10px $teal-8;  
+  @include size(120px , 135px);
   margin-left: 20px;
-  transition: 0.5s;
+  gap: 5px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s; 
 
-  &:Hover{
-    box-shadow: 1px 30px 10px $teal-5;  
-    transform: rotatex(-60deg);
-    background-color: $slate-8;
+  &:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
   }
+  
+  
 }
+.resume .course .card2 {
+  @include size(120px , 135px);
+  @include flex-col(center,center);
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  transition: all .2s;
+  &:hover {
+    transform: scale(0.96);
+    border-radius: 20px;
+  }
+} 
+
 .resume .course .card .image{
-  @include size(100% , 95px);
+  @include size(85% , 90px);
+  margin: 5px auto;
   transition: 0.5s;
 }
-.card:hover   .image{
-  transform: rotatex(0deg);
-  height: 180px !important; 
-  margin-top: -70px;
+.resume .course .card2:hover .image{
+  transform: scale(0.96);
 }
 
 .resume .course .card p{
@@ -118,9 +129,7 @@ z-index: -1;
   color: var(--text);
   transition: 0.2s;
 }
-.resume .course .card:hover  p{
-opacity: 0
-}
+
   /*========================
     4- Animation section
 ============================*/
